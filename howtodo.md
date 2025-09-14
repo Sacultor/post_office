@@ -1,6 +1,6 @@
 下面是一份**面向像我这样的小呆瓜的「自建邮局」保姆级方案**，目标是：  
 ✅ 用一台云服务器 + 一个域名，跑起能收发邮件、Web 网页客户端、手机客户端都能用的“私人邮局”。  
-✅ 全程几乎都是 copy-paste 命令，30 行以内搞定，不纠结原理，**先做出一坨屎，再慢慢优化成屎山**
+✅ 全程几乎都是 copy-paste 命令，30 行以内搞定，我们是小白，所以不纠结原理，**先做出一坨屎，再慢慢优化成屎山**
 ✅ 采用 Docker 版 Poste.io（开箱即用，自带反垃圾/病毒、Webmail、SSL 自动续期），省掉 80% 坑。
 
 ---
@@ -29,7 +29,7 @@ telnet smtp.qq.com 25
 curl -fsSL https://get.docker.com | bash
 # 2. 开机自启
 systemctl enable --now docker
-# 3. 装 docker-compose（新版已集成插件）
+# 3. 装 docker-compose
 apt install docker-compose-plugin -y
 ```
 
